@@ -1,0 +1,43 @@
+.l-header {
+  background: #000;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.menu-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.menu-nav a {
+  color: #fff;
+  display: inline-block;
+  padding: 16px 0;
+  font-size: 18px;
+  text-decoration: none;
+  position: relative;
+}
+
+.menu-nav a::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0px;
+  background: #fff;
+  margin-top: 4px;
+  transition: 0.3s;
+  position: absolute;
+}
+
+.menu-nav a:hover:after {
+  width: 100%;
+}
