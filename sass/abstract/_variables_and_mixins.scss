@@ -1,3 +1,30 @@
+// Colors
+// Shades of yellow
+$y-1: #ffbb00;
+$y-2: #e4a30b;
+$y-3: #a66f00;
+$y-4: #664400;
+$y-5: #222200;
+
+$white: #fff;
+
+// Shades of gray
+$g-1: #f7f7f7;
+$g-2: #ededed;
+$g-3: #dedede;
+$g-4: #cccccc;
+$g-5: #b2b2b2;
+$g-6: #9c9c9c;
+$g-7: #717171;
+$g-8: #595959;
+$g-9: #404040;
+$g-10: #2e2e2e;
+
+// Shades of black
+$b-1: #000;
+$b-2: #111;
+$b-3: #332200;
+
 //Typer of Containers
 @mixin container {
   max-width: 1200px;
@@ -14,6 +41,76 @@
   margin-left: auto;
   margin-right: auto;
   display: flex;
+}
+
+
+//Typography - Roboto 32 / 24 / 18 / 16
+@mixin roboto($size, $weight, $lineHeight) {
+  font-family: "Roboto", sans-serif;
+  @if $size == 32 {
+    font-size: 2rem;
+    font-weight: $weight;
+    line-height: $lineHeight;
+  }
+  @else if $size == 24 {
+    font-size: 1.5rem;
+    font-weight: $weight;
+    line-height: $lineHeight;
+  } @else if $size == 18 {
+    font-size: 1.125rem;
+    font-weight: $weight;
+    line-height: $lineHeight;
+  } @else if $size == 16 {
+    font-size: 1rem;
+    font-weight: $weight;
+    line-height: $lineHeight;
+  } @else if $size == 14 {
+    font-size: 0.875rem;
+    font-weight: $weight;
+    line-height: $lineHeight;
+  }
+  
+}
+
+//Typography - Poppins 64 / 48 / 32 / 18 / 16 / 12
+@mixin poppins($size, $weight, $lineHeight) {
+  font-family: "Poppins", sans-serif;
+  @if $size == 64 {
+    font-size: 4rem;
+    font-weight: $weight;
+    line-height: $lineHeight;
+  } @else if $size == 48 {
+    font-size: 3rem;
+    font-weight: $weight;
+    line-height: $lineHeight;
+  } @else if $size == 32 {
+    font-size: 2rem;
+    font-weight: $weight;
+    line-height: $lineHeight;
+  } @else if $size == 18 {
+    font-size: 1.125rem;
+    font-weight: $weight;
+    line-height: $lineHeight;
+  } @else if $size == 16 {
+    font-size: 1rem;
+    font-weight: $weight;
+    line-height: $lineHeight;
+  } @else if $size == 12 {
+    font-size: 0.75rem;
+    font-weight: $weight;
+    line-height: $lineHeight;
+  }
+}
+
+
+//Typography - Merriweather 32
+@mixin merriweather($size, $weight, $lineHeight) {
+  font-family: "Merriweather", serif;
+  @if $size == 32 {
+    font-size: 2rem;
+    font-weight: $weight;
+    line-height: $lineHeight;
+  }
 }
 
 

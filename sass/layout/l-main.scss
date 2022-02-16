@@ -1,0 +1,38 @@
+.l-main {
+  background: #000;
+  box-shadow: inset 0 -120px $white;
+}
+
+.main-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 40px;
+}
+
+.main-content {
+  align-self: end;
+  padding-bottom: 200px;
+}
+
+.main-content h1 {
+  @include poppins(64, 600, 1.125);
+  color: $white;
+  margin-bottom: 32px;
+}
+
+.main-content p {
+  @include roboto(24, 400, 1.5);
+  color: $g-5;
+  margin-bottom: 20px;
+}
+
+.main-content a:hover {
+  background: linear-gradient(#ffb60d, #e59317);
+}
+
+.main-intro img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
